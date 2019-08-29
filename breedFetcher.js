@@ -14,10 +14,11 @@ const fetchBreedDescription = function(breedName, callback) {
         // Breed Not Found cases
         // console.log("Returning nothing.");
         callback("Returning nothing.", null);
-      }
-      // The demand input
-      else {
-        // console.log(data[0]["description"]);
+      } else {
+        // The demand input
+        console.log("ERROR ", error);
+        console.log("ERROR is ", error);
+        console.log(typeof data[0]["description"]);
         callback(null, data[0]["description"]);
       }
     }
